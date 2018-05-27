@@ -49,7 +49,7 @@ def process_crawl(spider, setting):
 
 def crawl_usa_stock_data():
     # crawl the stock list
-    process_crawl(AmericaListSpider, {})
+    # process_crawl(AmericaListSpider, {})
     # crawl the kdata
     for _, security_item in get_security_list(security_type='stock', exchanges=['nasdaq'],
                                               codes=US_STOCK_CODES).iterrows():
